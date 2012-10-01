@@ -1,0 +1,100 @@
+#brand {
+	background: url("../img/EasyReceiptTitle.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 60px;
+    text-indent: -99999px;
+    width: 226px;
+    float: left;
+    padding: 20px 0 0 0;
+}
+
+#border {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 2px solid #999999;
+    float: right;
+    padding: 10px;
+}
+
+body {
+    color: #6E6E6E;
+    font: 12px/19px 'Droid Sans',sans-serif;
+}
+
+#border .form-inline {
+	margin: 0 0 5px;
+	
+}
+
+.home-text {
+    display: block;
+    font: italic 27px/41px 'Droid Serif',serif;
+    padding: 40px 100px 0 0;
+    float: left;
+}
+
+#copyright {
+    background: url("../img/bd-pattern.png") repeat scroll 0 0 transparent;
+}
+
+#copyright .copyright {
+    color: #555555;
+    float: left;
+    padding: 10px 0 0 20px;
+}
+#copyright p {
+    display: block;
+    font-size: 10px;
+    line-height: 17px;
+}
+
+#copyright .widget-area {
+    float: right;
+    margin-right: 26px;
+}
+
+#copyright .widget_socialnet {
+    height: 24px;
+    margin: 8px 0;
+}
+
+#copyright .widget_socialnet ul {
+    display: block;
+    float: right;
+    height: 24px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#copyright .widget_socialnet li {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 24px;
+    margin: 0 4px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#copyright .widget_socialnet .rss a {
+    background: url("../img/icon-sn-rss.png") no-repeat scroll 0 0 transparent;
+}
+
+#copyright .widget_socialnet .twitter a {
+    background: url("../img/icon-sn-twitter.png") no-repeat scroll 0 0 transparent;
+}
+
+#copyright .widget_socialnet .facebook a {
+    background: url("../img/icon-sn-facebook.png") no-repeat scroll 0 0 transparent;
+}
+
+#copyright .widget_socialnet a {
+    color: #999999;
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    text-indent: -999999px;
+    width: 25px;
+}
+
