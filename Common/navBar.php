@@ -5,9 +5,15 @@
 		<div class="container"> 
 			<!-- brand class is from bootstrap.css --> 
 			
-			<a id="brand" href="http://localhost/EasyReceipt2">Easy Receipt</a>
+			<a id="brand" href="http://localhost/EasyReceipt3">Easy Receipt</a>
+			
 			<div class="home-text">Receipt Management the easy way!</div> 
-				<?php require ('/Login/loginframe.php')?>	
+			
+			<?php 
+              //require ('/Login/loginframe.php')
+			  require ('/Login/checkLogin.php')
+
+            ?>	
 					
 			
 		</div><!-- /container --> 

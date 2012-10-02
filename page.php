@@ -21,7 +21,7 @@
 
 
 <?php
-	$whitelist = array("home", "User/home", "User/upload", "User/sort", "User/report", "User/accountDetails");
+	$whitelist = array("home", "User/userPage");
   	if(in_array($_GET['page'], $whitelist)) {
 				
 		include($_GET['page'].".php");

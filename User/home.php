@@ -1,14 +1,8 @@
+<div class="row">
 
+  <div class="span12">
+    <p>Home PHP </p>
+  </div>
 
-
-<div class="container">
-
-<?php
-  
-  $current = 'home'; 
-  
-  require('menu.php'); 
-  
-?>
 	
 </div>

@@ -98,3 +98,9 @@ body {
     width: 25px;
 }
 
+#logout {
+    float: right;
+    font: 17px/19px 'Droid Sans',sans-serif;
+    margin: 50px 10px 0 0;
+}
+

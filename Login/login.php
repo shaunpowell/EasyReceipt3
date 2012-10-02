@@ -57,7 +57,7 @@ if(!$username || !$password){
 			
 			//echo $row['ID'];
 			
-			header('Location: ../page.php?page=User/home');
+			header('Location: ../page.php?page=User/userPage');
 
 			//check to see if the user has not activated their account yet
 			//if($row['active'] != 1){

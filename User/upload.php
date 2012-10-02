@@ -1,51 +1,35 @@
-<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
-<!-- Shim to make HTML5 elements usable in older Internet Explorer versions -->
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="styles/style.css">
-
-<div id="logged_in_container">
-
-<?php
+  <form id="fileupload" action="server/php/" method="POST" enctype="multipart/form-data">
+  
+    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+    <div class="fileupload-buttonbar">
       
-  $current = 'upload'; 
-      
-  require('menu.php'); 
-
-?>
-
-<div class="tab-content">
-	<div class="tab-pane active">
- 
-    	<form id="fileupload" action="server/php/" method="POST" enctype="multipart/form-data">
-     	<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-        <div class="fileupload-buttonbar">
-                <!-- The fileinput-button span is used to style the file input field as button -->
-                <span class="btn btn-success fileinput-button">
-                    <i class="icon-plus icon-white"></i>
-                    <span>Add files...</span>
-                    <input type="file" name="files[]" multiple>
-                </span>
-                <div id="remove">
-                	<button type="button" class="btn btn-danger delete">
-                    	<i class="icon-trash icon-white"></i>
-                    	<span>Delete</span>
-                	</button>
-                	<input type="checkbox" class="toggle">
-                </div>
-        </div>
-        <!-- The loading indicator is shown during file processing -->
-        <div class="fileupload-loading"></div>
-        <br>
-        <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped">
-        	<tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery">
-        	</tbody>
-        </table>
-    </form>
-  </div>
-</div>
-
+      <!-- The fileinput-button span is used to style the file input field as button -->
+      <span class="btn btn-success fileinput-button">
+        <i class="icon-plus icon-white"></i>
+        <span>Add files...</span>
+        <input type="file" name="files[]" multiple>
+      </span>
+                
+      <div id="remove">
+        <button type="button" class="btn btn-danger delete">
+          <i class="icon-trash icon-white"></i>
+          <span>Delete</span>
+        </button>
+       
+         <input type="checkbox" class="toggle">
+       </div>
+     </div>
+        
+     <!-- The loading indicator is shown during file processing -->
+     <div class="fileupload-loading"></div>
+     <br>
+     
+     <!-- The table listing the files available for upload/download -->
+     <table role="presentation" class="table table-striped">
+       <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+      </table>
+  </form>
 <!-- The template to display files available for upload -->
 <script id="template-upload" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
@@ -184,27 +168,30 @@
 {% } %}
 </script>
 
+
+<!-- 
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -- >
 <script src="js/vendor/jquery.ui.widget.js"></script>
-<!-- The Templates plugin is included to render the upload/download listings -->
+<!-- The Templates plugin is included to render the upload/download listings -- >
 <script src="http://blueimp.github.com/JavaScript-Templates/tmpl.min.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -- >
 <script src="http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<!-- The Canvas to Blob plugin is included for image resizing functionality -- >
 <script src="http://blueimp.github.com/JavaScript-Canvas-to-Blob/canvas-to-blob.min.js"></script>
-<!-- Bootstrap JS and Bootstrap Image Gallery are not required, but included for the demo -->
+<!-- Bootstrap JS and Bootstrap Image Gallery are not required, but included for the demo -- >
 <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"></script>
 <script src="http://blueimp.github.com/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
-<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -- >
 <script src="js/jquery.iframe-transport.js"></script>
-<!-- The basic File Upload plugin -->
+<!-- The basic File Upload plugin -- >
 <script src="js/jquery.fileupload.js"></script>
-<!-- The File Upload file processing plugin -->
+<!-- The File Upload file processing plugin -- >
 <script src="js/jquery.fileupload-fp.js"></script>
-<!-- The File Upload user interface plugin -->
+<!-- The File Upload user interface plugin -- >
 <script src="js/jquery.fileupload-ui.js"></script>
-<!-- The main application script -->
+<!-- The main application script -- >
 <script src="js/main.js"></script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE8+ -->
 <!--[if gte IE 8]><script src="js/cors/jquery.xdr-transport.js"></script><![endif]-->
